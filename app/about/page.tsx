@@ -20,8 +20,8 @@ const About = () => {
               src="/logo.jpg"
               alt="Fashion Model"
               className="w-full rounded-lg shadow-lg object-cover h-80"
-              width={100}
-              height={100}
+              width={300}
+              height={300}
             />
           </div>
           {/* Text Section */}
