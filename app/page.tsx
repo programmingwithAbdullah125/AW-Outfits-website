@@ -1,101 +1,179 @@
-import Image from "next/image";
+const mainProductPage = [
+  {
+    id: 1,
+    image: "/p1.jpg",
+    name: "Classic Red & Black Shirt",
+    price: "$10",
+    description: "Stylish and comfortable for any occasion.",
+  },
+  {
+    id: 2,
+    image: "/p2.jpg",
+    name: "Casual Denim Jacket",
+    price: "$25",
+    description: "Perfect for a casual look with high-quality denim.",
+  },
+  {
+    id: 3,
+    image: "/p3.jpg",
+    name: "Slim Fit Jeans",
+    price: "$30",
+    description: "Trendy jeans with a slim fit, ideal for modern styles.",
+  },
+  {
+    id: 4,
+    image: "/p4.jpg",
+    name: "Formal Blazer",
+    price: "$40",
+    description: "Elegant blazer suitable for formal events.",
+  },
+  {
+    id: 5,
+    image: "/p5.jpg",
+    name: "Graphic T-Shirt",
+    price: "$15",
+    description: "Bold graphic tee for everyday wear.",
+  },
+  {
+    id: 6,
+    image: "/p6.jpg",
+    name: "Sports Hoodie",
+    price: "$35",
+    description: "Comfortable hoodie for sports and outdoor activities.",
+  },
+  {
+    id: 7,
+    image: "/p7.jpg",
+    name: "Leather Jacket",
+    price: "$50",
+    description: "High-quality leather jacket for a rugged look.",
+  },
+  {
+    id: 8,
+    image: "/p8.jpg",
+    name: "Summer Shorts",
+    price: "$12",
+    description: "Cool and comfy shorts for the summer.",
+  },
+  {
+    id: 9,
+    image: "/p9.jpg",
+    name: "Elegant Silk Scarf",
+    price: "$8",
+    description: "Light and stylish, adds elegance to any outfit.",
+  },
+  {
+    id: 10,
+    image: "/p10.jpg",
+    name: "Running Sneakers",
+    price: "$45",
+    description: "Durable and comfortable sneakers for running.",
+  },
+  {
+    id: 11,
+    image: "/p11.jpg",
+    name: "Stylish Wristwatch",
+    price: "$20",
+    description: "Fashionable wristwatch that suits any attire.",
+  },
+  {
+    id: 12,
+    image: "/p12.jpg",
+    name: "Stylish Wristwatch",
+    price: "$20",
+    description: "Fashionable wristwatch that suits any attire.",
+  },
+];
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+// Animated product cards
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 md:px-10 py-8">
+  {mainProductPage.map((product) => (
+    <div
+      key={product.id}
+      className="border border-gray-300 p-4 shadow-lg rounded-lg bg-white transform transition-transform duration-200 hover:scale-105 hover:shadow-xl"
+    >
+      <Image
+        src={product.image}
+        alt={product.name}
+        width={50}
+        height={48}
+        className="object-cover rounded-lg mb-3 transition-transform duration-200 hover:scale-110"
+      />
+      <h3 className="font-semibold text-lg text-gray-800">{product.name}</h3>
+      <p className="text-gray-600 mt-1">{product.description}</p>
+      <p className="text-gray-800 font-bold text-xl mt-2">{product.price}</p>
+      <button className="bg-blue-500 text-white px-4 py-2 rounded mt-4 w-full hover:bg-blue-600 transition-transform transform hover:scale-105 duration-150">
+        Add to Cart
+      </button>
     </div>
-  );
-}
+  ))}
+</div>
+
+
+
+import React from "react"
+import Image from "next/image";
+export default function Home() {
+  return(
+    <>
+ <section
+      className="h-[80vh] bg-cover bg-center flex items-center text-white relative"
+      style={{
+        backgroundImage: "url('/herosection.jpg')", // Replace with your actual image path
+        backgroundPosition: "center center",
+      }}
+    >
+      {/* Welcome Section positioned towards the left */}
+      <div className="bg-black bg-opacity-40 p-6 rounded-md max-w-2xl ml-8 lg:ml-12">
+        {/* Welcome Text */}
+        <h2 className="text-lg sm:text-xl md:text-2xl font-semibold tracking-widest uppercase">
+          Welcome To
+        </h2>
+
+        {/* Brand Name */}
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mt-2 mb-4">
+          AW Outfits
+        </h1>
+
+        {/* Tagline */}
+        <p className="text-base sm:text-lg md:text-xl italic">
+          Fashion is more than just clothing
+        </p>
+      </div>
+    </section>
+     {/* <div className="bg-[url('/herosection.jpg')] bg-cover h-96">
+     <div className="relative h-64">
+      <h1 className=" text-4xl font-bold absolute bottom-10 left-0 pl-4 space-x-4 ">WELCOME TO</h1>
+      <h1 className="text-4xl font-bold absolute bottom-0 left-0 pl-4 space-x-4 "> AW Outfits</h1>
+      </div>
+</div> */}
+<div>
+           
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 md:px-10 py-8">
+  {mainProductPage.map((product) => (
+    <div
+      key={product.id}
+      className="border border-gray-300 p-4 shadow-lg rounded-lg bg-white transform transition-transform duration-200 hover:scale-105 hover:shadow-xl"
+    >
+      <Image
+        src={product.image}
+        alt={product.name}
+        width={500}
+        height={500}
+        className=" object-cover rounded-lg mb-3 transition-transform duration-200 hover:scale-110"
+      />
+      <h3 className="font-semibold text-lg text-gray-800">{product.name}</h3>
+      <p className="text-gray-600 mt-1">{product.description}</p>
+      <p className="text-gray-800 font-bold text-xl mt-2">{product.price}</p>
+      <button className="bg-blue-500 text-white px-4 py-2 rounded mt-4 w-full hover:bg-blue-600 transition-transform transform hover:scale-105 duration-150">
+        Add to Cart
+      </button>
+    </div>
+  ))}
+</div>
+</div>
+    </>
+    )
+    }
+
